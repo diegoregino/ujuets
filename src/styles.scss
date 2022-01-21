@@ -1,1 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/sass/style';
+
+// Replace above style with this SCSS file to enable dark mode styles
+//@import "./assets/sass/style.dark";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+$naranja: #ff8d22;
+$rojo: #e01f25;
+$ancho-celda-cantidad: 80px;
+$ancho-celda-importe-venta: 150px;
+$ancho-celda-transito: 80px;
+$ancho-boton-expand: 50px;
+$paddin-celdad: 30px;
+$azul: steelblue;
+$color-excell: #175c36;
+$color-gris-azulado: rgba(67, 76, 79, 0.7);
+
+.bg-naranja {
+  background: $naranja !important;
+  navbutton_background_color: $naranja;
+}
+
+.bg-rojo {
+  background: $rojo !important;
+  navbutton_background_color: $rojo;
+}
+
+.bg-griz-azulado {
+}
+
+.color-blanco {
+  color: #fff;
+}
+
+.inventory-grid-head {
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: 150px 200px 80px 100px 100px 100px;
+  grid-gap: 10px;
+  background-color: $rojo;
+  color: #fff;
+}
+
+.inventory-grid-body {
+  @extend .inventory-grid-head;
+  background-color: #fff;
+  color: #000;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.button_excell {
+  background: $color-excell;
+  color: #fff;
+  width: 120px;
+  font-weight: bold;
+  height: 35px;
+}
+
+.menu-title {
+  color: white !important;
+}
+
+.active-link {
+  background-color: $rojo !important;
+}

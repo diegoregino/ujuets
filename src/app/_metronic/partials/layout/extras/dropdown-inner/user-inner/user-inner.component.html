@@ -1,0 +1,34 @@
+<!--
+Poner aqui las opciones del menu user
+-->
+<!-- <ng-container *ngIf="user$ | async as _user"> -->
+<ng-container *ngIf="true">
+  <div class="menu-item px-3">
+    <div class="menu-content d-flex align-items-center px-3">
+      <div class="symbol symbol-50px me-5">
+        <img
+          class="rounded-circle"
+          src="assets/media/avatars/150-26.jpg"
+          alt="user"
+        />
+      </div>
+
+      <div class="d-flex flex-column">
+        <div class="fw-bolder d-flex align-items-center fs-5">
+          <!-- {{ _user.userName }} {{_user.Company}} -->Aqui rl username
+        </div>
+        <a class="fw-bold text-muted text-hover-primary fs-7 cursor-pointer">
+          <!-- {{ _user.email }} -->Aqui rl username
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="separator my-2"></div>
+
+  <div class="menu-item px-5">
+    <a (click)="logout()" class="menu-link px-5 cursor-pointer"
+      >Cerrar sesión</a
+    >
+  </div>
+</ng-container>
